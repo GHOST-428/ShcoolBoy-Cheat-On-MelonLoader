@@ -6,10 +6,8 @@ using UnityEngine.SceneManagement;
 
 namespace SNHall
 {
-    // Token: 0x02000002 RID: 2
     public class Class1 : MelonMod
     {
-        // Token: 0x06000001 RID: 1 RVA: 0x00002050 File Offset: 0x00000250
         public override void OnGUI()
         {
             bool mainMenu = this.MainMenu;
@@ -21,7 +19,6 @@ namespace SNHall
             }
         }
 
-        // Token: 0x06000002 RID: 2 RVA: 0x00002094 File Offset: 0x00000294
         public override void OnUpdate()
         {
             bool keyDown = UnityEngine.Input.GetKeyDown((KeyCode)277);
@@ -32,7 +29,6 @@ namespace SNHall
         }
 
 
-        // Token: 0x06000003 RID: 3 RVA: 0x000020C8 File Offset: 0x000002C8
         private void MenuHack(int id)
         {
             bool flag = GUILayout.Button("FullBright", Array.Empty<GUILayoutOption>());
@@ -87,13 +83,8 @@ namespace SNHall
             GUI.DragWindow();
         }
 
-        // Token: 0x04000001 RID: 1
         public bool noclip;
-
-        // Token: 0x04000002 RID: 2
         private bool MainMenu;
-
-        // Token: 0x04000003 RID: 3
         public Rect Menat = new Rect(400f, 400f, 400f, 400f);
 
     }
